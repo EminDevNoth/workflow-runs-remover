@@ -1,14 +1,20 @@
+name: Cleanup Workflow Runs
+
 on: [workflow_dispatch]
 
+# REMOVE IF THE TOKEN YOU ARE USING ALREADY HAS THESE PERMISSIONS
+permissions:
+  actions: write
+  contents: read
+
 jobs:
-  hello_world_job:
+  cleanup:
     runs-on: ubuntu-latest
-    name: A job to say hello
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
+      - name: Delete Workflow Runs
+        uses: ./
         with:
-          name: 'Mona the Octocat'
+          token: ${{ secrets.GITHUB_TOKEN }}

@@ -3,9 +3,12 @@ description: 'An action to filter and delete workflow runs in a repository.'
 author: 'EminDevNoth'
 
 inputs:
-  name:
-    description: 'Your name'
+  token:
+    description: 'Authentication token'
     required: true
+  filters:
+    description: 'The list of filters to target workflow runs to delete'
+    required: false
 
 runs:
   using: node20
