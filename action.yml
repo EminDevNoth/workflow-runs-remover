@@ -1,0 +1,9 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  name:
+    description: 'Your name'
+    required: true
+runs:
+  using: node20
+  main: dist/index.js
