@@ -1,9 +1,12 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Delete workflow runs'
+description: 'An action to filter and delete workflow runs in a repository.'
+author: 'EminDevNoth'
+
 inputs:
   name:
     description: 'Your name'
     required: true
+
 runs:
   using: node20
   main: dist/index.js

@@ -1,7 +1,20 @@
 {
-  "name": "github-action-template",
-  "module": "index.ts",
+  "name": "delete-workflow-runs",
+  "description": "GitHub Actions to filter and delete workflow runs in a repository",
+  "author": "EminDevNoth",
+  "version": "0.0.0",
+  "private": true,
+  "module": "src/index.ts",
   "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/EminDevNoth/delete-workflow-runs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EminDevNoth/delete-workflow-runs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EminDevNoth/delete-workflow-runs/issues"
+  },
   "scripts": {
     "package": "npx ncc build src/index.ts -o dist --source-map --license licenses.txt",
     "dev": "local-action ./ src/index.ts .env.dev",

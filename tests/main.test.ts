@@ -38,6 +38,6 @@ describe('action', () => {
     await main.run()
 
     expect(runMock).toHaveReturned()
-    expect(setFailedMock).toHaveBeenNthCalledWith(1, "Required input 'name'")
+    expect(setFailedMock).toHaveBeenNthCalledWith(1, 'Required input "name"')
   })
 })
