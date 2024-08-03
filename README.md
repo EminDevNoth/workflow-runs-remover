@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Delete Workflow Runs
-        uses: EminDevNoth/delete-workflow-runs@v0.0.0
+        uses: EminDevNoth/delete-workflow-runs@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -52,7 +52,7 @@ or more** ago.
 ```yml
 steps:
   - name: Delete Workflow Runs
-    uses: EminDevNoth/delete-workflow-runs@v0.0.0
+    uses: EminDevNoth/delete-workflow-runs@v1.0.0
     with:
       token: ${{ secrets.GITHUB_TOKEN }}
       # JSON VALUE
@@ -69,7 +69,7 @@ also all **successful** runs that occurred **60 days or more** ago.
 ```yml
 steps:
   - name: Delete Workflow Runs
-    uses: EminDevNoth/delete-workflow-runs@v0.0.0
+    uses: EminDevNoth/delete-workflow-runs@v1.0.0
     with:
       token: ${{ secrets.GITHUB_TOKEN }}
       filters: |
@@ -96,7 +96,7 @@ branches **except** the branches **main** and **prod**.
 ```yml
 steps:
   - name: Delete Workflow Runs
-    uses: EminDevNoth/delete-workflow-runs@v0.0.0
+    uses: EminDevNoth/delete-workflow-runs@v1.0.0
     with:
       token: ${{ secrets.GITHUB_TOKEN }}
       filters: |

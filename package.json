@@ -2,7 +2,7 @@
   "name": "delete-workflow-runs",
   "description": "GitHub Actions to filter and delete workflow runs in a repository",
   "author": "EminDevNoth",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "module": "src/index.ts",
   "type": "module",
